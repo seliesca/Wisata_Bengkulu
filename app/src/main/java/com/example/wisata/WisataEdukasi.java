@@ -16,6 +16,8 @@ public class WisataEdukasi extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wisata_edukasi);
 
+        //list view digunkan untuk mengisi kolom listview di dalam layout//
+
         listView = (ListView) findViewById(R.id.list);
         String[] values = new String[]{"Benteng Malborough","Rumah Pengangsingan Bung Karno","Musium Bengkulu","Tugu Thomas Parr", "Taman Budaya Provinsi Bengkulu","Rumah Fatmawati","Masjid Jamik","Kampung Tionghoa","Makam Inggris Jitra","Persemanyaman Panglima Sentot Ali Basya","Kantor Pemerintahan Thomas Stamford Raffles"
 
@@ -26,6 +28,7 @@ public class WisataEdukasi extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
+            // menggunakan on clik agar dapat di klik pad saat benteng malborough dan rumah pengangsingan bungkarno di klik//
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {

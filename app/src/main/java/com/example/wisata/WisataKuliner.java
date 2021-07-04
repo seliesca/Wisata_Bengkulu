@@ -17,6 +17,8 @@ public class WisataKuliner extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wisata_kuliner);
 
+        // menggunnkan listview dan string terbut untuk mengisi dari tabel listview//
+
         listView = (ListView) findViewById(R.id.list);
         String[] values = new String[]{"Rumah Makan Muara Jenggalu","Kampoeng Pesisir","Pempek Saskia","Aloha Resto","Pempek Cek Toni","Pindang 77 Bengkulu","Rm Marola","Ikan Bakar Jingkrak","Ikan Bakar 5227","Rm Sari Eco","Rm Inga Raya","Pempek Betty","Resto Tanjung Karang","Rm Takana Juo","Lontong Tunjang Kapuas"
 
@@ -26,6 +28,8 @@ public class WisataKuliner extends AppCompatActivity {
                 android.R.layout.simple_list_item_1, android.R.id.text1, values);
 
         listView.setAdapter(adapter);
+
+        //menggunkan onclik agar 2 pilihan wisata pertama dapat di klik sengiinga muncul sedikit deskripsi gambar dan lokasi//
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View view,

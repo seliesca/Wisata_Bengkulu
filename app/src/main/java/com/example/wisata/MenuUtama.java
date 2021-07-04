@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.Button;
 
 public class MenuUtama extends AppCompatActivity {
+
+    //mendeklarasikan button agar button dapat di klik//
     Button button1, button2, button3, button4, button5, button6;
 
     @Override

@@ -11,6 +11,8 @@ import android.content.Intent;
 import android.widget.Toast;
 
 public class About extends AppCompatActivity {
+
+    // mendeklarasikan button kembali di layout about agar dapat kembali ke manu awal//
     Button btkembali;
 
     @Override

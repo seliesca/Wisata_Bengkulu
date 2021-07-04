@@ -1,4 +1,7 @@
 <resources>
+
+    // semua string berupa text deskripsi dari beberapa wisata tiap kategori, dan string ini nanti akan di panggil ke dalam layout masing2 wisata yang bersangkutan//
+
     <string name="app_name">Wisata</string>
 
     <string name="text1">

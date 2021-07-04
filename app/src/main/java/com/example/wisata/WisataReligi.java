@@ -16,6 +16,8 @@ public class WisataReligi extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wisata_religi);
 
+
+        // untuk menngisi data di listview//
         listView = (ListView) findViewById(R.id.list);
         String[] values = new String[]{"Masjid Baitul Izzah","Masjid Raya At-Taqwa", "Masjid Khalifah"
 
@@ -26,6 +28,8 @@ public class WisataReligi extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
+
+        // menggunakan onclick listener agar nanti jika di clik akan muncul gambar deskripsi serta lokasi//
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {

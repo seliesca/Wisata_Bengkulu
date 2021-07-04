@@ -17,6 +17,7 @@ public class WisataAlam extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wisata_alam);
 
+        //list view digunkan untuk mengisi kolom listview di dalam layout//
         listView = (ListView) findViewById(R.id.list);
         String[] values = new String[]{"Air Terjun Madap Sari Sengkuang", "Pulau Tikus",
                 "Pantai Panjang", "Bukit Kaba", "Danau Dendam",
@@ -29,6 +30,8 @@ public class WisataAlam extends AppCompatActivity {
 
         listView.setAdapter(adapter);
 
+
+        // menggunakan on clik agar dapat di klik pada saat 6 item teratas di klik //
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
